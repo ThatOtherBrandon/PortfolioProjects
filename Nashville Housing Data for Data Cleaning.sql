@@ -139,11 +139,7 @@ If you need to drop a column you've made do this
 
 Alter Table NashvilleHousing
 DROP COLUMN OwnersSpiltState;
-
-Alter Table NashvilleHousing
-DROP COLUMN OwnerSplitState;
 */
-
 -------------------------------------------------------------------------------------
 
 -- Change Y and N to Yes and No in "Sold as Vacant" field
@@ -174,7 +170,7 @@ SET SoldAsVacant = CASE when SoldAsVacant = 'Y' Then 'Yes'
 
 
 -------------------------------------------------------------------------------------
--- Not standard practice to delect data in a database but for this instance im going to.
+-- Not standard practice to delete data in a database but for this instance im going to.
 -- Removing Duplicates
 
 WITH RowNumCTE as (
